@@ -569,6 +569,7 @@ body {
 
 .burger-menu-main {
   display: none;
+  position: relative;
 }
 
 .container {
@@ -580,7 +581,24 @@ body {
 }
 
 .burger-slide {
+  /* Когда мы указывем position почти со всеми значениями */
+  /* нам надо указывать top (bottom) и left (right) */
+  /* Еще желательно родительскому блоку дать position: relative */
+  /* в данном случае top и rigth не нужны */
+  /* Это нужно, чтобы burger-slide был в пределах родительского блока */
+  /* иначе он будет отталкиваться от body */
   position: absolute;
+  top: 30px;
+  /* Так можно отцентрировать блок */
+  right: 50%;
+  transform: translateX(50%);
+
+  text-align: center;
+}
+
+/* Был отступ, я убрал так */
+.burger-slide > a {
+  margin-right: 0;
 }
 
 .nav-item {
