@@ -9,7 +9,7 @@ body{
 }
 
 .header{
-    background-image: url(bg.jpg);
+    background-image: url(images/bg.jpg);
     height: 100vh;
     background-repeat: non-repeat;
     background-size: cover;
@@ -228,6 +228,8 @@ color: #FF7400
 .h-num{
     display: block;
     align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .history-num{
@@ -251,7 +253,7 @@ color: #FF7400
 .history-number{
     display: flex;
     align-items: center;
-    justify-content: none;
+    justify-content: center;
     width: 444px;
     margin-top: 75px;
     flex-wrap: wrap;
@@ -288,7 +290,7 @@ color: #FF7400
 }
 
 .black-block{
-    background-image: url(bg11.jpg);
+    background-image: url(images/bg11.jpg);
     width: auto;
     height: 357px;
     display: block;
@@ -373,6 +375,8 @@ color: #FF7400
 }
 
 .burger-text{
+    display: flex;
+    width: 475px;
     align-items: center;
     font-family: 'Tinos', serif;
     font-size: 26px;
@@ -380,8 +384,18 @@ color: #FF7400
     margin-left: 20px;
 }
 
+.burger-line{
+    border-bottom: 2px dashed black;
+    width: 40%;
+    height: auto; 
+}
+
+.b-text{
+    margin: 0 10px;
+}
+
 .menu{
-    background-image: url(bg12.jpg);
+    background-image: url(images/bg12.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
@@ -397,13 +411,25 @@ color: #FF7400
     padding-top: 100px;
     text-align: center;
     padding-bottom: 138px;
+
 }
 
-.menu-item{
+.menu-recommended{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #D67E34;
+    color: black;
+    padding: 10% 14%;
+}
+
+.menu-item1, 
+.menu-item2,
+.menu-item3{
     background-color: #FFFFFF;
     text-align: center;
-    width: 33%;
-    padding-top: 80px;
+    width: 300px;
+    padding-top: 50px;
     padding-bottom: 30px;
     margin-right: 20px;
 }
@@ -434,11 +460,6 @@ color: #FF7400
     margin-top: 20px;
 }
 
-.price-image{
-    position: absolute;
-    right: 55px;
-    bottom: 0;
-}
 
 .menu-img{
     width: 90%;
@@ -448,19 +469,10 @@ color: #FF7400
     position: relative;
 }
 
-.price-420{
-    position: absolute;
-    bottom: 31px;
-    right: 80px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
 .menu-items{
     display: flex;
     justify-content: center;
+
 }
 
 .comment{
@@ -552,7 +564,12 @@ color: #FF7400
 
 .cook-content{
     display: flex;
-    justify-content: none;
+    justify-content: center;
+    
+}
+
+.cook-content img{
+    margin-right: 20px;
 }
 
 .footer{
@@ -567,11 +584,41 @@ color: #FF7400
 }
 
 .container{
-    width: auto;
+    width: 1200px;
 }
 
+.block{
+    display: block;
+}
 
-@media(max-width: 1500px){
+.burger-slide{
+    position: absolute;
+}
+
+.nav-item{
+    font-size: 15px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.disp{
+    display: none;
+}
+
+.container{
+    width: 1200px;
+}
+
+@media(max-width: 1300px){
+
+    .container{
+        width: auto;
+    }
+
     .gallery-content{
         display: block;
     }
@@ -592,16 +639,6 @@ color: #FF7400
         margin-right: 0;
     }
 
-}
-
-@media(max-width: 1300px){
-    .menu-items{
-        display: block;
-    }
-
-    .menu-item{
-        margin: 20px
-    }
 
     .header-title{
         position: static;
@@ -679,11 +716,10 @@ color: #FF7400
 
 }
 
-@media (max-width: 1185px){
+@media (max-width: 1024px){
     .burger-menu-main{
         display: block;
     }
-
 
     .nav,
     .cart, 
@@ -694,25 +730,103 @@ color: #FF7400
 
     .header-line{
         justify-content: space-between;
+        margin-right: 20px;
     }
 
     .pizza{
         display: none;
     }
-}
 
-@media (max-width: 1000px){
     .cards-holder{
         display: block;
     }
 
     .card{
-        width: 100%;
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: 30px;
         padding-bottom: 20px;
+        font-size: 25px;
     }
 }
 
-@media (max-width: 780px){
-    
+
+@media(max-width: 700px){
+    .left-title{
+        font-size: 37px;
+    }
+
+    .left-text{
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
+    .rightbtm{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .black-block{
+        height: auto;
+    }
+
+    .burger-line{
+        display: none;
+    }
+
+    .burger-text{
+        width: auto;
+        display: block;
+        text-align: center;
+        margin: 0px 0px;
+    }
+
+    .img-gall{
+        width: 274px;
+        height: 255px;
+        object-fit: cover;
+    }
+
+    .menu-item2,
+    .menu-item3{
+       display: none;
+    }
+}
+
+
+@media (max-width: 510px){
+
+    .cook-content{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cooker-content{
+        height: 310px;
+        width: 274px;
+        object-fit: cover;
+    }
+
+    .history-number{
+        display: block;
+        padding-right: 0px;
+    }
+
+    .h-num{
+        padding-bottom: 20px;
+    }
+
+    .header-title{
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+    .header-subtitle{
+        font-size: 45px;
+    }
+
+    .header-btm{
+        margin-top: 120px;
+    }
 }
